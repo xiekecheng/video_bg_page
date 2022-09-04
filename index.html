@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<section class="showcase">
+		<video class="video" src="./assets/boxing.mp4" autoplay loop muted></video>
+		<div class="overlay"></div>
+		<div class="header">
+			<img src="assets/logo.png" alt="" width="60">
+			<div class="toggle"></div>
+		</div>
+		<div class="text">
+			<h2>CHAMPIONS </h2>
+			<h3>MADE IN THE RING</h3>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, odio. Vel quis accusantium
+				quia magnam
+				nostrum nulla voluptatum aspernatur debitis!</p>
+			<a class="join-btn" href="#">JOIN NOW!</a>
+		</div>
+
+		<ul class="social">
+			<li class="item"><img src="./assets/qq.png" alt=""></li>
+			<li class="item"><img src="./assets/weixin.png" alt=""></li>
+			<li class="item"><img src="./assets/weibo.png" alt=""></li>
+		</ul>
+	</section>
+
+	<div class="menu">
+		<ul>
+			<li>Home</li>
+			<li>Introduce</li>
+			<li>Coachs</li>
+			<li>Lessons</li>
+			<li>Destination</li>
+		</ul>
+	</div>
+	<script>
+		const toggle = document.querySelector('.toggle')
+		const showcase = document.querySelector('.showcase')
+
+		toggle.addEventListener('click', () => {
+			toggle.classList.toggle('active')
+			showcase.classList.toggle('active')
+		})
+	</script>
+</body>
+
+</html>
